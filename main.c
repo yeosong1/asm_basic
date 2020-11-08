@@ -37,11 +37,30 @@ void		test_strcpy(void)
     printf("ft_strcpy : %s\n", ft_strcpy(dest1, dest2));
 }
 
+void		test_strcmp(void)
+{
+	char	str1[1024];
+	char	str2[1024];
+
+    printf(Y "====================\n");
+    printf("==    ft_strcmp   ==\n");
+    printf("====================\n");
+	printf(G"<test>\n");
+	printf("input a string str1 ===> : ");
+	scanf("%s", str1);
+	printf("input a string str2 ===> : ");
+	scanf("%s", str2);
+	printf(R"<result>\n");
+	printf("   strcmp : %lu\n", strcmp(str1, str2));
+    printf("ft_strcmp : %zu\n", ft_strcmp(str1, str2));
+}
+
+
 int main()
 {
 	test_strlen();
 	test_strcpy();
-	// test_strcmp()
+	test_strcmp();
 	// test_strdup()
 	// test_write()
 	// test_read()
@@ -49,11 +68,6 @@ int main()
 	return (0);
 }
 
-// void	test_strcmp()
-// {
-
-
-// }
 
 // void	test_strdup()
 // {
