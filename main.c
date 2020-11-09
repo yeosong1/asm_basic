@@ -55,13 +55,28 @@ void		test_strcmp(void)
     printf("ft_strcmp : %zu\n", ft_strcmp(str1, str2));
 }
 
+void		test_strdup(void)
+{
+	char	str[2048];
+
+    printf(Y "====================\n");
+    printf("==    ft_strdup   ==\n");
+    printf("====================\n");
+	printf(G"<test>\n");
+	printf("input a string  ===> : ");
+	scanf("%s", str);
+	printf(R"<result>\n");
+	printf("   strlen : %lu\n", strlen(str));
+    printf("ft_strlen : %zu\n", ft_strlen(str));
+
+}
 
 int main()
 {
 	test_strlen();
 	test_strcpy();
 	test_strcmp();
-	// test_strdup()
+	test_strdup();
 	// test_write()
 	// test_read()
 
@@ -69,11 +84,7 @@ int main()
 }
 
 
-// void	test_strdup()
-// {
 
-
-// }
 
 // void	test_write()
 // {
