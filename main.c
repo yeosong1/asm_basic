@@ -6,7 +6,7 @@
 /*   By: kukim <kukim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 17:47:03 by kukim             #+#    #+#             */
-/*   Updated: 2020/11/09 17:52:01 by kukim            ###   ########.fr       */
+/*   Updated: 2020/11/09 17:54:46 by kukim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ void			test_write_read(void)
 	fd = open("./test.txt", O_CREAT | O_TRUNC | O_RDWR, 777);
 	scanf("%[^\n]", buff);
 	getchar();
-	printf(G"Creating test.txt file using ft_write() function . . . (3s)\n");
+	printf(G"\nCreating test.txt file using ft_write() function . . . (3s)\n");
 	sleep(3);
 	ft_write(fd, buff, ft_strlen(buff));
 	close(fd);
@@ -107,7 +107,7 @@ void			test_write_read(void)
 	buff[ret] = '\0';
 	sleep(3);
 	printf(R"File read completion\n");
-	printf("test.txt : %s\n", buff);
+	printf("\ntest.txt is \n%s", buff);
 	close(fd);
 }
 
