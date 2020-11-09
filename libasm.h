@@ -6,7 +6,7 @@
 /*   By: kukim <kukim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/08 16:45:58 by kukim             #+#    #+#             */
-/*   Updated: 2020/11/09 15:24:42 by kukim            ###   ########.fr       */
+/*   Updated: 2020/11/09 17:01:19 by kukim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@
 size_t		ft_strlen(const char *s);
 int			ft_strcmp(const char *s1, const char *s2);
 char		*ft_strcpy(const char *dst, const char *src);
- char		*ft_strdup(const char *s1);
-// int		ft_read(int fd, void *buff, size_t nbyte);
-// int		ft_write(int fd, void *buff, size_t nbyte);
+char		*ft_strdup(const char *s1);
+int			ft_write(int fd, void *buff, size_t nbyte);
+int			ft_read(int fd, void *buff, size_t nbyte);
 
 #endif
