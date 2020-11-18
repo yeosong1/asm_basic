@@ -6,7 +6,7 @@
 /*   By: kukim <kukim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 17:47:03 by kukim             #+#    #+#             */
-/*   Updated: 2020/11/09 17:54:46 by kukim            ###   ########.fr       */
+/*   Updated: 2020/11/18 15:20:59 by yeosong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,8 @@ void			test_strcpy(void)
 	dest1 = strdup(s1);
 	dest2 = strdup(s2);
 	printf(R"<result>\n");
-	printf("   strcpy : %s\n", strcpy(s1, s2));
-	printf("ft_strcpy : %s\n", ft_strcpy(dest1, dest2));
+	printf("   strcpy : %s\n", strcpy(s2, s1));
+	printf("ft_strcpy : %s\n", ft_strcpy(dest2, dest1));
 	getchar();
 }
 
