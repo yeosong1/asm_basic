@@ -15,12 +15,12 @@ loopcount:
 exit:
 	ret							; ft_strlen()함수 호출한 곳 아래 코드로 내려감
 
-; char	ft_strlen(const char *str)
+; size_t	ft_strlen(const char *s)
 ; {
 ; 	int		len;
 ; 
 ; 	len = 0;
-; 	while (*src++)
+; 	while (*s++)
 ; 		len++;
 ; 	return (len);
 ; }
