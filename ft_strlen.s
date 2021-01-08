@@ -1,6 +1,5 @@
-
 section .text
-	global _ft_strlen
+	global	_ft_strlen
 
 _ft_strlen:
 	mov rax, 0
@@ -15,12 +14,12 @@ loopcount:
 exit:
 	ret							; ft_strlen()함수 호출한 곳 아래 코드로 내려감
 
-; size_t	ft_strlen(const char *s)
+; char	ft_strlen(const char *str)
 ; {
 ; 	int		len;
 ; 
 ; 	len = 0;
-; 	while (*s++)
+; 	while (*src++)
 ; 		len++;
 ; 	return (len);
 ; }
